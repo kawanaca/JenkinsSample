@@ -84,4 +84,18 @@ public class TestHealthCheck extends TestCase {
         final String actual = bmiBean.getBodyType();
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testExecuteUpper4() {
+        final double height = 170.0;
+        final double weight = 120.0;
+        HealthCheck healthCheck = new HealthCheck();
+        BmiBean bmiBean = new BmiBean();
+        bmiBean.setHeight(height);
+        bmiBean.setWeight(weight);
+        healthCheck.execute(bmiBean);
+        final String expected = "肥満（4度）";
+        final String actual = bmiBean.getBodyType();
+        assertEquals(expected, actual);
+    }
 }
