@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * BMIビーンクラス.
  */
-public class BmiBean implements Serializable {
+public final class BmiBean implements Serializable {
 
     /** 身長. */
     private double height;
