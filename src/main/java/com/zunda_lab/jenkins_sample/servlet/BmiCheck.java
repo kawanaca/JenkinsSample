@@ -16,7 +16,7 @@ import com.zunda_lab.jenkins_sample.model.HealthCheck;
  * BMIサーブレットクラス.
  */
 @WebServlet("/BmiCheck")
-public class BmiCheck  extends HttpServlet {
+public final class BmiCheck  extends HttpServlet {
     /**
      * シリアルバージョンID.
      */
