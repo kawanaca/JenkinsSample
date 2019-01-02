@@ -18,7 +18,7 @@ public class HealthCheck {
      * BMIを算出する.
      * @param bmiBean BmiBean
      */
-    public void execute(final BmiBean bmiBean) {
+    public final void execute(final BmiBean bmiBean) {
         double weight = bmiBean.getWeight();
         double height = bmiBean.getHeight();
         double bmi = weight / (height / TO_METER * height / TO_METER);
